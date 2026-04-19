@@ -2,27 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="/assets/black62-logo.png" />
+    <link rel="apple-touch-icon" href="/assets/black62-logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#000000" />
 
     <title>Black62 Commodities | Coal, Chrome &amp; Animal Feed Trading South Africa</title>
-    <meta name="description" content="Black62 Commodities is a trusted South African trading and bulk logistics partner in coal, chrome and animal feed — backed by 20+ years of combined industry experience." />
+    <meta name="description" content="Black62 Commodities is a trusted South African trading and bulk logistics partner in coal, chrome and animal feed — backed by 20+ years of combined industry experience and a 62-ton abnormal heavy-haul fleet." />
     <meta name="author" content="Black62 Commodities (Pty) Ltd" />
     <link rel="canonical" href="https://www.black62.co.za/" />
 
     <meta property="og:title" content="Black62 Commodities | Moving Africa's Commodities. Globally." />
-    <meta property="og:description" content="Trusted trading and logistics partner in coal, chrome, and animal feed — backed by 20+ years of combined industry experience." />
+    <meta property="og:description" content="Trusted trading and logistics partner in coal, chrome, and animal feed — 62-ton abnormal heavy-haul fleet, 20+ years of combined industry experience." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.black62.co.za/" />
-    <meta property="og:image" content="https://www.black62.co.za/og-image.jpg" />
+    <meta property="og:image" content="https://www.black62.co.za/assets/industrial-port.jpg" />
     <meta property="og:locale" content="en_ZA" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Black62 Commodities" />
     <meta name="twitter:description" content="Moving Africa's Commodities. Globally." />
-    <meta name="twitter:image" content="https://www.black62.co.za/og-image.jpg" />
+    <meta name="twitter:image" content="https://www.black62.co.za/assets/industrial-port.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/styles.css" />
 
     <script type="application/ld+json">
     {
@@ -31,8 +37,8 @@
       "name": "Black62 Commodities (Pty) Ltd",
       "alternateName": "Tsogang Brands (Pty) Ltd",
       "url": "https://www.black62.co.za",
-      "logo": "https://www.black62.co.za/logo.png",
-      "description": "South African commodities trading and bulk logistics company specialising in coal, chrome and animal feed.",
+      "logo": "https://www.black62.co.za/assets/black62-logo.png",
+      "description": "South African commodities trading and bulk logistics company specialising in coal, chrome and animal feed, with a 62-ton abnormal heavy-haul fleet.",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "22 Bedien Street, Culembeeck AH",
@@ -47,7 +53,333 @@
   </head>
 
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- HEADER -->
+    <header id="site-header" class="site-header" role="banner">
+      <div class="container header-inner">
+        <a href="#top" class="brand" aria-label="Black62 Commodities home">
+          <img src="/assets/black62-logo.png" alt="Black62 Commodities logo" width="120" height="48" />
+        </a>
+        <nav class="primary-nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#commodities">Commodities</a>
+          <a href="#logistics">Logistics</a>
+          <a href="#why">Why Us</a>
+          <a href="#contact">Contact</a>
+          <a href="#contact" class="btn btn-primary btn-sm">Request a Quote</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile" hidden>
+        <a href="#about">About</a>
+        <a href="#commodities">Commodities</a>
+        <a href="#logistics">Logistics</a>
+        <a href="#why">Why Us</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="btn btn-primary">Request a Quote</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <!-- HERO -->
+      <section class="hero" aria-label="Hero">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-glow" aria-hidden="true"></div>
+        <svg class="hero-particles" viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true"></svg>
+        <div class="container hero-inner">
+          <p class="eyebrow fade-in">South African Commodities Trading &amp; Logistics</p>
+          <h1 class="display-1 fade-up">
+            <span class="silver">Moving Africa's</span><br />
+            <span class="silver">Commodities.</span><br />
+            <span class="teal">Globally.</span>
+          </h1>
+          <p class="lead fade-up delay-1">
+            Trusted trading and logistics partner in coal, chrome, and animal feed —
+            backed by 20+ years of combined industry experience and a specialised
+            62-ton abnormal heavy-haul fleet.
+          </p>
+          <div class="cta-row fade-up delay-2">
+            <a href="#contact" class="btn btn-primary btn-lg">Request a Quote</a>
+            <a href="company-profile.html" class="btn btn-outline btn-lg">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download Company Profile
+            </a>
+          </div>
+        </div>
+        <a href="#trust" class="scroll-indicator" aria-label="Scroll to next section">
+          <span>Scroll</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+        </a>
+        <div class="hero-fade" aria-hidden="true"></div>
+      </section>
+
+      <!-- TRUST BAR -->
+      <section id="trust" class="trust-bar" aria-label="Trust indicators">
+        <div class="container">
+          <ul class="trust-list">
+            <li><span class="icon-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></span>B-BBEE Compliant</li>
+            <li><span class="icon-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></span>20+ Years Experience</li>
+            <li><span class="icon-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>Pan-African Reach</li>
+            <li><span class="icon-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></span>Reg No: 2015/115352/07</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section" aria-label="About Black62 Commodities">
+        <div class="container">
+          <div class="two-col">
+            <div class="reveal">
+              <p class="eyebrow">About Us</p>
+              <h2 class="display-2 silver">From Tsogang Brands to Black62 Commodities</h2>
+              <div class="prose">
+                <p>Black62 Commodities is the new identity of Tsogang Brands (Pty) Ltd — a South African
+                  trading and bulk logistics business with a decade of operating heritage and over twenty
+                  years of combined management experience across mining, energy and agriculture.</p>
+                <p>Our rebrand reflects our sharper focus: physical commodities trading in coal, chrome
+                  and animal feed, supported by our own 62-ton abnormal heavy-haul fleet. We work with
+                  reputable producers, hauliers and end-users to move material at scale, on schedule,
+                  and with full compliance.</p>
+              </div>
+            </div>
+            <div class="reveal delay-1">
+              <div class="corner-frame">
+                <img src="/assets/industrial-port.jpg" alt="Aerial view of an industrial bulk commodities port at sunset" loading="lazy" width="1024" height="1024" />
+              </div>
+            </div>
+          </div>
+
+          <div class="stat-grid">
+            <div class="stat-card reveal"><div class="stat-value">20+</div><div class="stat-label">Years Combined Experience</div></div>
+            <div class="stat-card reveal delay-1"><div class="stat-value">62T</div><div class="stat-label">Abnormal Truck Capacity</div></div>
+            <div class="stat-card reveal delay-2"><div class="stat-value">3</div><div class="stat-label">Core Commodity Verticals</div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMMODITIES -->
+      <section id="commodities" class="section section-alt" aria-label="Our commodities">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">What We Trade</p>
+            <h2 class="display-2 silver">Three commodities. One reliable partner.</h2>
+          </div>
+
+          <div class="card-grid">
+            <article class="commodity-card reveal">
+              <div class="card-media">
+                <img src="/assets/commodity-coal.jpg" alt="Coal commodity" loading="lazy" width="800" height="800" />
+                <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></span>
+              </div>
+              <div class="card-body">
+                <h3>Coal</h3>
+                <p>Thermal and metallurgical grade coal sourced from reputable South African producers, supplied to domestic industrial, power generation, and export markets.</p>
+                <a href="#contact" class="link-arrow">Learn more <span>→</span></a>
+              </div>
+            </article>
+
+            <article class="commodity-card reveal delay-1">
+              <div class="card-media">
+                <img src="/assets/commodity-chrome.jpg" alt="Chrome commodity" loading="lazy" width="800" height="800" />
+                <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg></span>
+              </div>
+              <div class="card-body">
+                <h3>Chrome</h3>
+                <p>Chrome ore and concentrate supplied to domestic smelters and international export markets, with full quality and compliance assurance.</p>
+                <a href="#contact" class="link-arrow">Learn more <span>→</span></a>
+              </div>
+            </article>
+
+            <article class="commodity-card reveal delay-2">
+              <div class="card-media">
+                <img src="/assets/commodity-feed.jpg" alt="Animal feed commodity" loading="lazy" width="800" height="800" />
+                <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 22 16 8M3.47 12.53 5 11l1.53 1.53a3.5 3.5 0 0 1 0 4.94L5 19l-1.53-1.53a3.5 3.5 0 0 1 0-4.94zM7.47 8.53 9 7l1.53 1.53a3.5 3.5 0 0 1 0 4.94L9 15l-1.53-1.53a3.5 3.5 0 0 1 0-4.94zM11.47 4.53 13 3l1.53 1.53a3.5 3.5 0 0 1 0 4.94L13 11l-1.53-1.53a3.5 3.5 0 0 1 0-4.94z"/></svg></span>
+              </div>
+              <div class="card-body">
+                <h3>Animal Feed</h3>
+                <p>Bulk animal feed products for commercial livestock, poultry, dairy, and feedlot operations, delivered on schedule and at volume.</p>
+                <a href="#contact" class="link-arrow">Learn more <span>→</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- LOGISTICS -->
+      <section id="logistics" class="section" aria-label="Logistics and transport">
+        <div class="hero-grid" aria-hidden="true" style="opacity:.4"></div>
+        <div class="container">
+          <div class="two-col">
+            <div class="reveal">
+              <p class="eyebrow">Logistics &amp; Transport</p>
+              <h2 class="display-2 silver">62-Ton Abnormal Heavy-Haul</h2>
+              <p class="prose">Our specialised 62-ton abnormal road freight fleet is purpose-built to move
+                bulk coal, chrome and oversized commodity loads across South Africa and the SADC region —
+                with full permit compliance and route management.</p>
+              <ul class="check-list">
+                <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>62-ton abnormal heavy-haul road freight, with permit and escort coordination</li>
+                <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Cross-border SADC movements with full documentation</li>
+                <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Fleet management, dispatch and turnaround scheduling</li>
+                <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Weighbridge tickets, seals and chain-of-custody on every load</li>
+              </ul>
+            </div>
+
+            <div class="reveal delay-1">
+              <div class="map-card">
+                <svg viewBox="0 0 800 600" role="img" aria-label="Map showing routes across Southern Africa" class="route-map">
+                  <path d="M180 220 L220 180 L260 170 L300 150 L360 140 L420 145 L480 160 L540 180 L600 200 L640 230 L660 270 L640 320 L630 370 L600 420 L560 460 L500 490 L440 510 L380 520 L320 515 L280 500 L240 470 L210 430 L190 380 L180 330 Z" fill="var(--surface)" stroke="hsla(182,78%,41%,0.4)" stroke-width="1.5"/>
+                  <g class="routes" stroke="var(--teal)" stroke-width="2" fill="none">
+                    <line x1="470" y1="270" x2="555" y2="360"/>
+                    <line x1="470" y1="270" x2="280" y2="510"/>
+                    <line x1="470" y1="270" x2="410" y2="200"/>
+                    <line x1="470" y1="270" x2="580" y2="250"/>
+                    <line x1="470" y1="270" x2="220" y2="290"/>
+                    <line x1="580" y1="250" x2="555" y2="360"/>
+                  </g>
+                  <g class="cities">
+                    <g><circle cx="470" cy="270" r="5" fill="var(--teal)"/><circle cx="470" cy="270" r="14" fill="hsla(182,78%,41%,0.18)" class="pulse"/><text x="482" y="260">Johannesburg</text></g>
+                    <g><circle cx="555" cy="360" r="5" fill="var(--teal)"/><circle cx="555" cy="360" r="14" fill="hsla(182,78%,41%,0.18)" class="pulse"/><text x="567" y="350">Durban</text></g>
+                    <g><circle cx="280" cy="510" r="5" fill="var(--teal)"/><circle cx="280" cy="510" r="14" fill="hsla(182,78%,41%,0.18)" class="pulse"/><text x="292" y="500">Cape Town</text></g>
+                    <g><circle cx="410" cy="200" r="5" fill="var(--teal)"/><circle cx="410" cy="200" r="14" fill="hsla(182,78%,41%,0.18)" class="pulse"/><text x="422" y="190">Gaborone</text></g>
+                    <g><circle cx="580" cy="250" r="5" fill="var(--teal)"/><circle cx="580" cy="250" r="14" fill="hsla(182,78%,41%,0.18)" class="pulse"/><text x="592" y="240">Maputo</text></g>
+                    <g><circle cx="220" cy="290" r="5" fill="var(--teal)"/><circle cx="220" cy="290" r="14" fill="hsla(182,78%,41%,0.18)" class="pulse"/><text x="232" y="280">Walvis Bay</text></g>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="truck-banner reveal">
+            <img src="/assets/abnormal-truck.jpg" alt="Black62 62-ton abnormal heavy-haul truck on a South African highway" loading="lazy" width="1280" height="800" />
+            <div class="truck-banner-overlay">
+              <p class="eyebrow">Heavy Haul</p>
+              <h3>Built for 62-ton abnormal loads</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY US -->
+      <section id="why" class="section section-alt" aria-label="Why choose Black62">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Why Choose Black62</p>
+            <h2 class="display-2 silver">Built on trust. Engineered for scale.</h2>
+          </div>
+
+          <div class="feature-grid">
+            <div class="feature-card reveal">
+              <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>
+              <h3>Experienced Management</h3>
+              <p>Over two decades of combined sector expertise.</p>
+            </div>
+            <div class="feature-card reveal delay-1">
+              <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></span>
+              <h3>Reliable Supply Chain</h3>
+              <p>Long-standing producer and transporter relationships.</p>
+            </div>
+            <div class="feature-card reveal delay-2">
+              <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg></span>
+              <h3>Competitive Pricing</h3>
+              <p>Transparent, efficient, and commercially fair.</p>
+            </div>
+            <div class="feature-card reveal delay-3">
+              <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+              <h3>Full Compliance</h3>
+              <p>SARS, B-BBEE, and regulatory alignment.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section" aria-label="Contact and quote request">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Get In Touch</p>
+            <h2 class="display-2 silver">Request a quote or speak to our team</h2>
+            <p class="prose" style="margin-top:1rem">Tell us about your tonnage, destination, and timing. We respond within one business day.</p>
+          </div>
+
+          <div class="two-col contact-grid">
+            <div class="reveal">
+              <ul class="contact-list">
+                <li><span class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><div><div class="contact-label">Address</div><div>22 Bedien Street, Culembeeck AH, Roodepoort, 1724</div></div></li>
+                <li><span class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg></span><div><div class="contact-label">Phone</div><div>+27 (0) 00 000 0000</div></div></li>
+                <li><span class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span><div><div class="contact-label">Email</div><div>info@black62.co.za</div></div></li>
+                <li><span class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></span><div><div class="contact-label">Registration</div><div>2015/115352/07</div></div></li>
+                <li><span class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="9" x2="20" y2="9"/><line x1="4" y1="15" x2="20" y2="15"/><line x1="10" y1="3" x2="8" y2="21"/><line x1="16" y1="3" x2="14" y2="21"/></svg></span><div><div class="contact-label">VAT</div><div>4870279298</div></div></li>
+              </ul>
+              <div class="map-embed">
+                <iframe title="Black62 Commodities Roodepoort office location" src="https://www.google.com/maps?q=22+Bedien+Street,+Culembeeck+AH,+Roodepoort,+1724,+South+Africa&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+
+            <form id="enquiry-form" class="enquiry-form reveal delay-1" novalidate>
+              <div class="form-grid">
+                <div class="field"><label for="name">Full Name <span class="req">*</span></label><input id="name" name="name" type="text" required /></div>
+                <div class="field"><label for="company">Company Name <span class="req">*</span></label><input id="company" name="company" type="text" required /></div>
+                <div class="field"><label for="email">Email <span class="req">*</span></label><input id="email" name="email" type="email" required /></div>
+                <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" /></div>
+                <div class="field"><label for="commodity">Commodity of Interest</label>
+                  <select id="commodity" name="commodity">
+                    <option value="" disabled selected>Select…</option>
+                    <option>Coal</option><option>Chrome</option><option>Animal Feed</option><option>Logistics</option><option>Other</option>
+                  </select>
+                </div>
+                <div class="field"><label for="volume">Estimated Volume / Tonnage</label><input id="volume" name="volume" type="text" /></div>
+              </div>
+              <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="5" placeholder="Tell us about your enquiry…"></textarea></div>
+              <button type="submit" class="btn btn-primary btn-lg" id="submit-btn">Submit Enquiry</button>
+              <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-grid">
+        <div>
+          <img src="/assets/black62-logo.png" alt="Black62 Commodities" width="140" height="56" />
+          <p class="muted small">Moving Africa's Commodities. Globally.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#commodities">Commodities</a></li>
+            <li><a href="#logistics">Logistics</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="company-profile.html">Company Profile</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-list muted">
+            <li>22 Bedien Street, Culembeeck AH, Roodepoort, 1724</li>
+            <li>+27 (0) 00 000 0000</li>
+            <li>info@black62.co.za</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul class="footer-list muted">
+            <li>Reg No: 2015/115352/07</li>
+            <li>VAT: 4870279298</li>
+            <li class="gold">B-BBEE Compliant</li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom container">
+        <p>© <span id="year"></span> Black62 Commodities (Pty) Ltd. All rights reserved.</p>
+        <p>Trading as Black62 Commodities · Tsogang Brands (Pty) Ltd</p>
+      </div>
+    </footer>
+
+    <script src="/main.js"></script>
   </body>
 </html>
