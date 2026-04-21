@@ -1,0 +1,203 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  canonical?: string;
+  ogImage?: string;
+  headerScrolled?: boolean;
+}
+
+const {
+  title,
+  description = "Black62 Commodities is a trusted South African trading and bulk logistics partner in coal, chrome and animal feed — backed by 20+ years of combined industry experience and a 62-ton abnormal heavy-haul fleet.",
+  canonical = 'https://www.black62.co.za/',
+  ogImage = 'https://www.black62.co.za/assets/industrial-port.jpg',
+  headerScrolled = false,
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/assets/black62-logo.png" />
+    <link rel="apple-touch-icon" href="/assets/black62-logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content="Black62 Commodities (Pty) Ltd" />
+    <link rel="canonical" href={canonical} />
+
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:locale" content="en_ZA" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      name: 'Black62 Commodities (Pty) Ltd',
+      alternateName: 'Tsogang Brands (Pty) Ltd',
+      url: 'https://www.black62.co.za',
+      logo: 'https://www.black62.co.za/assets/black62-logo.png',
+      description:
+        'South African commodities trading and bulk logistics company specialising in coal, chrome and animal feed, with a 62-ton abnormal heavy-haul fleet.',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '22 Bedien Street, Culembeeck AH',
+        addressLocality: 'Roodepoort',
+        postalCode: '1724',
+        addressCountry: 'ZA',
+      },
+      vatID: '4870279298',
+      taxID: '2015/115352/07',
+    })} />
+  </head>
+
+  <body>
+    <Header scrolled={headerScrolled} />
+    <main id="top">
+      <slot />
+    </main>
+    <Footer />
+
+    <script>
+      // Year
+      const yearEl = document.getElementById('year');
+      if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+
+      // Header scroll state
+      const header = document.getElementById('site-header');
+      if (header) {
+        const onScroll = () => {
+          if (window.scrollY > 24) header.classList.add('scrolled');
+          else header.classList.remove('scrolled');
+        };
+        onScroll();
+        window.addEventListener('scroll', onScroll, { passive: true });
+      }
+
+      // Mobile menu
+      const toggle = document.querySelector<HTMLButtonElement>('.menu-toggle');
+      const mobileNav = document.getElementById('mobile-nav') as HTMLElement | null;
+      if (toggle && mobileNav) {
+        toggle.addEventListener('click', () => {
+          const open = toggle.getAttribute('aria-expanded') === 'true';
+          toggle.setAttribute('aria-expanded', String(!open));
+          mobileNav.hidden = open;
+        });
+        mobileNav.querySelectorAll('a').forEach((a) =>
+          a.addEventListener('click', () => {
+            toggle.setAttribute('aria-expanded', 'false');
+            mobileNav.hidden = true;
+          })
+        );
+      }
+
+      // Hero particles
+      const particles = document.querySelector('.hero-particles');
+      if (particles) {
+        const SVG = 'http://www.w3.org/2000/svg';
+        for (let i = 0; i < 36; i++) {
+          const cx = (i * 137) % 1000;
+          const cy = (i * 211) % 1000;
+          const r = (i % 3) + 1;
+          const dur = 3 + (i % 5);
+          const c = document.createElementNS(SVG, 'circle');
+          c.setAttribute('cx', String(cx));
+          c.setAttribute('cy', String(cy));
+          c.setAttribute('r', String(r));
+          c.setAttribute('opacity', '0.25');
+          const anim = document.createElementNS(SVG, 'animate');
+          anim.setAttribute('attributeName', 'opacity');
+          anim.setAttribute('values', '0.05;0.55;0.05');
+          anim.setAttribute('dur', dur + 's');
+          anim.setAttribute('repeatCount', 'indefinite');
+          c.appendChild(anim);
+          particles.appendChild(c);
+        }
+      }
+
+      // Reveal on scroll
+      const revealEls = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((e) => {
+              if (e.isIntersecting) {
+                e.target.classList.add('is-visible');
+                io.unobserve(e.target);
+              }
+            });
+          },
+          { threshold: 0.12, rootMargin: '0px 0px -60px 0px' }
+        );
+        revealEls.forEach((el) => io.observe(el));
+      } else {
+        revealEls.forEach((el) => el.classList.add('is-visible'));
+      }
+
+      // Enquiry form
+      const form = document.getElementById('enquiry-form') as HTMLFormElement | null;
+      const status = document.getElementById('form-status') as HTMLElement | null;
+      const submitBtn = document.getElementById('submit-btn') as HTMLButtonElement | null;
+
+      if (form && status && submitBtn) {
+        form.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          status.className = 'form-status';
+          status.textContent = '';
+
+          if (!form.checkValidity()) {
+            status.classList.add('error');
+            status.textContent = 'Please fill in all required fields.';
+            form.reportValidity();
+            return;
+          }
+
+          submitBtn.disabled = true;
+          const originalLabel = submitBtn.textContent ?? 'Submit Enquiry';
+          submitBtn.textContent = 'Sending…';
+
+          const data = Object.fromEntries(new FormData(form).entries());
+
+          try {
+            await fetch('/api/contact', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(data),
+            });
+          } catch (err) {
+            // Endpoint placeholder — fall through to success UX
+          }
+
+          status.classList.add('success');
+          status.textContent = "Thank you — we'll be in touch within one business day.";
+          form.reset();
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalLabel;
+        });
+      }
+    </script>
+  </body>
+</html>

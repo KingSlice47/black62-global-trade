@@ -1,0 +1,33 @@
+---
+interface Props {
+  scrolled?: boolean;
+}
+const { scrolled = false } = Astro.props;
+---
+
+<header id="site-header" class={`site-header${scrolled ? ' scrolled' : ''}`} role="banner">
+  <div class="container header-inner">
+    <a href="/#top" class="brand" aria-label="Black62 Commodities home">
+      <img src="/assets/black62-logo.png" alt="Black62 Commodities logo" width="120" height="48" />
+    </a>
+    <nav class="primary-nav" aria-label="Primary">
+      <a href="/#about">About</a>
+      <a href="/#commodities">Commodities</a>
+      <a href="/#logistics">Logistics</a>
+      <a href="/#why">Why Us</a>
+      <a href="/#contact">Contact</a>
+      <a href="/#contact" class="btn btn-primary btn-sm">Request a Quote</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile" hidden>
+    <a href="/#about">About</a>
+    <a href="/#commodities">Commodities</a>
+    <a href="/#logistics">Logistics</a>
+    <a href="/#why">Why Us</a>
+    <a href="/#contact">Contact</a>
+    <a href="/#contact" class="btn btn-primary">Request a Quote</a>
+  </nav>
+</header>
