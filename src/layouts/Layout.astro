@@ -13,7 +13,7 @@ interface Props {
 
 const {
   title,
-  description = "Black62 Commodities is a trusted South African trading and bulk logistics partner in coal, chrome and animal feed — backed by 20+ years of combined industry experience and a 62-ton abnormal heavy-haul fleet.",
+  description = "Black62 is a trusted South African trading and bulk logistics partner in coal, chrome and animal feed — backed by 20+ years of combined industry experience and a 62-ton abnormal heavy-haul fleet.",
   canonical = 'https://www.black62.co.za/',
   ogImage = 'https://www.black62.co.za/assets/industrial-port.jpg',
   headerScrolled = false,
@@ -31,7 +31,7 @@ const {
 
     <title>{title}</title>
     <meta name="description" content={description} />
-    <meta name="author" content="Black62 Commodities (Pty) Ltd" />
+    <meta name="author" content="Black62 (Pty) Ltd" />
     <link rel="canonical" href={canonical} />
 
     <meta property="og:title" content={title} />
@@ -56,9 +56,9 @@ const {
     <script type="application/ld+json" set:html={JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'Organization',
-      name: 'Black62 Commodities (Pty) Ltd',
-      alternateName: 'Tsogang Brands (Pty) Ltd',
+      name: 'Black62 (Pty) Ltd',
       url: 'https://www.black62.co.za',
+      telephone: '+27 10 500 8919',
       logo: 'https://www.black62.co.za/assets/black62-logo.png',
       description:
         'South African commodities trading and bulk logistics company specialising in coal, chrome and animal feed, with a 62-ton abnormal heavy-haul fleet.',

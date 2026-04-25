@@ -3,73 +3,445 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout
-  title="Company Profile | Black62 Commodities"
-  description="Black62 Commodities full company profile — heritage, services, commodities, 62-ton heavy-haul fleet and registration details."
+  title="Company Profile | Black62"
+  description="Black62 corporate profile — heritage, leadership, commodities, logistics, partnerships and compliance."
   canonical="https://www.black62.co.za/company-profile/"
   headerScrolled
 >
-  <article class="subpage">
+  <article class="subpage profile">
     <div class="container content">
-      <p class="eyebrow" style="margin-bottom:1rem">Company Profile</p>
-      <h1 class="silver">Black62 Commodities (Pty) Ltd</h1>
-      <p class="meta">Trading and bulk logistics — coal, chrome and animal feed.</p>
+      <!-- Cover -->
+      <header class="profile-cover">
+        <p class="eyebrow">Company Profile</p>
+        <h1 class="silver">Black62 (Pty) Ltd</h1>
+        <p class="profile-lead">Moving Africa's Commodities. Globally.</p>
+        <p class="meta">Trading and bulk logistics across coal, chrome and animal feed — supported by a 62-ton abnormal heavy-haul road freight fleet.</p>
 
-      <div class="actions">
-        <button class="btn btn-primary" onclick="window.print()">Download PDF</button>
-        <button class="btn btn-outline" onclick="window.print()">Print</button>
-      </div>
+        <div class="actions no-print">
+          <button class="btn btn-primary" onclick="window.print()">Download PDF</button>
+          <button class="btn btn-outline" onclick="window.print()">Print</button>
+          <p class="profile-hint">When the print dialog opens, choose <strong>“Save as PDF”</strong> as the destination to download a copy.</p>
+        </div>
+      </header>
 
-      <section>
-        <h2>About the Company</h2>
-        <p>Black62 Commodities is the new identity of Tsogang Brands (Pty) Ltd, registered in 2015 under registration number 2015/115352/07. The rebrand reflects a sharpened focus on the physical trading of coal, chrome and animal feed, supported by a specialised 62-ton abnormal heavy-haul road freight fleet across South Africa and the wider SADC region.</p>
-        <p>Our management team brings together more than two decades of combined experience across mining, energy, agriculture and freight. We are headquartered in Roodepoort, Gauteng.</p>
+      <!-- 01 — About -->
+      <section class="profile-section">
+        <h2><span class="section-num">01</span> About the Company</h2>
+        <p>Black62 (Pty) Ltd is a South African trading and logistics business, registered in 2015 under registration number <strong>2015/115352/07</strong>. The business is sharply focused on the physical trading of <strong>coal, chrome and animal feed</strong>, backed by our own specialised <strong>62-ton abnormal heavy-haul road freight fleet</strong> operating across South Africa and the wider SADC region.</p>
+        <p>Our business connects reputable producers with domestic and international buyers, and delivers the material to destination under a single, accountable operational workflow — trading, haulage, documentation and compliance managed by one team rather than a chain of sub-contractors.</p>
+        <p>Headquartered in Roodepoort, Gauteng, Black62 works across the three sectors that anchor South Africa's real economy: <strong>energy, mining and agriculture</strong>.</p>
       </section>
 
-      <section>
-        <h2>Vision</h2>
-        <p>To become Africa's most dependable trading and logistics partner for industrial and agricultural commodities — connecting reputable producers to domestic and global buyers with discipline, transparency and scale.</p>
+      <!-- 02 — Heritage -->
+      <section class="profile-section">
+        <h2><span class="section-num">02</span> Heritage &amp; Track Record</h2>
+        <p>The business has operated since 2015, with a management team whose combined experience across mining, energy, agriculture and freight exceeds two decades. The Black62 identity consolidates that heritage under a clear trading identity and product focus.</p>
+        <p>Our track record has been built on three consistent principles: <strong>trusted sources</strong>, <strong>documented quality</strong>, and <strong>compliant transport</strong>. Each transaction, whether domestic spot or cross-border contract, is executed against this standard.</p>
       </section>
 
-      <section>
-        <h2>Mission</h2>
-        <p>We move the right material to the right buyer at the right time — with full compliance, fair pricing and reliable execution.</p>
+      <!-- 03 — Vision / Mission / Values -->
+      <section class="profile-section">
+        <h2><span class="section-num">03</span> Vision, Mission &amp; Values</h2>
+        <div class="vmv">
+          <div class="vmv-item">
+            <h3>Vision</h3>
+            <p>To become Africa's most dependable trading and logistics partner for industrial and agricultural commodities — connecting reputable producers to domestic and global buyers with discipline, transparency and scale.</p>
+          </div>
+          <div class="vmv-item">
+            <h3>Mission</h3>
+            <p>We move the right material to the right buyer at the right time — with full compliance, fair pricing and reliable execution.</p>
+          </div>
+          <div class="vmv-item">
+            <h3>Core Values</h3>
+            <ul>
+              <li><strong>Discipline</strong> — operational rigour on every load.</li>
+              <li><strong>Transparency</strong> — clear documentation, fair pricing.</li>
+              <li><strong>Compliance</strong> — full alignment with SARS, DMRE, DALRRD and POPIA.</li>
+              <li><strong>Accountability</strong> — one team, one point of contact, end-to-end.</li>
+              <li><strong>Scale</strong> — built to handle growing, contracted tonnage.</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
-      <section>
-        <h2>Core Commodities</h2>
-        <ul>
-          <li><strong>Coal</strong> — Thermal and metallurgical grade coal for power, industry and export.</li>
-          <li><strong>Chrome</strong> — Chrome ore and concentrate to local smelters and export markets.</li>
-          <li><strong>Animal Feed</strong> — Bulk feed for livestock, poultry, dairy and feedlot operations.</li>
-        </ul>
+      <!-- 04 — Leadership -->
+      <section class="profile-section">
+        <h2><span class="section-num">04</span> Leadership &amp; Team</h2>
+        <p>Black62 is led by a management team with over twenty years of combined experience spanning the mining, energy, agriculture, trading and logistics sectors. Each function is held by an accountable lead, rather than spread across junior staff — giving clients a consistent, senior point of contact on every engagement.</p>
+
+        <div class="team-grid">
+          <div class="team-card">
+            <h3>Commercial &amp; Trading</h3>
+            <p>Origination, pricing, contract structuring and buyer management across coal, chrome and animal feed. Responsible for supplier relationships, Incoterms-compliant sales documentation and monthly tonnage commitments.</p>
+          </div>
+          <div class="team-card">
+            <h3>Operations &amp; Logistics</h3>
+            <p>Fleet management, dispatch, abnormal-load permit coordination, cross-border documentation and real-time load tracking. Owns the physical performance of every load — from collection point to delivery.</p>
+          </div>
+          <div class="team-card">
+            <h3>Compliance &amp; Finance</h3>
+            <p>SARS and regulatory administration, B-BBEE verification, POPIA data handling, anti-money-laundering and tax compliance. Manages banking, treasury and commercial documentation alongside external auditors.</p>
+          </div>
+          <div class="team-card">
+            <h3>Client Services</h3>
+            <p>Single point of contact for active clients, reporting, invoicing and post-delivery reconciliation. Ensures every engagement closes with a clean, documented outcome and a clear line of sight for the next load.</p>
+          </div>
+        </div>
       </section>
 
-      <section>
-        <h2>Logistics Capabilities</h2>
+      <!-- 05 — Commodities -->
+      <section class="profile-section">
+        <h2><span class="section-num">05</span> Core Commodities</h2>
+
+        <div class="commodity-block">
+          <h3>Coal</h3>
+          <p>We trade both <strong>thermal</strong> and <strong>metallurgical</strong> coal sourced from reputable South African producers. Thermal product moves into domestic industrial, cement and power-generation buyers, as well as export-destined cargoes routed via established coastal and overland corridors. Metallurgical and anthracite product supports ferroalloy and steel-sector customers.</p>
+          <ul>
+            <li>Domestic and export-grade thermal coal</li>
+            <li>Metallurgical coal and anthracite for ferroalloy/steel use</li>
+            <li>Independent sampling and SANAS-referenced weighbridge tickets on every load</li>
+            <li>Full chain-of-custody documentation from colliery to delivery point</li>
+          </ul>
+        </div>
+
+        <div class="commodity-block">
+          <h3>Chrome</h3>
+          <p>Chrome ore, lumpy and concentrate sourced from the <strong>Bushveld Igneous Complex</strong> — the world's largest chrome resource. We supply local ferrochrome smelters and export buyers, with careful attention to grade consistency, Cr:Fe ratio and moisture management from mine to port or smelter.</p>
+          <ul>
+            <li>Lumpy, friable lumpy, fines and concentrate</li>
+            <li>Metallurgical, chemical and foundry grade offerings</li>
+            <li>Independent inspection, weighbridge reconciliation and sealed-sample chain of custody</li>
+            <li>Full export documentation for seaborne buyers</li>
+          </ul>
+        </div>
+
+        <div class="commodity-block">
+          <h3>Animal Feed</h3>
+          <p>Bulk animal feed — both raw ingredients and finished rations — for commercial poultry, dairy, beef-feedlot and pig operations across South Africa and neighbouring SADC markets. All product is sourced from <strong>Act 36 registered</strong> manufacturers and moved in equipment matched to the material.</p>
+          <ul>
+            <li>Raw ingredients: yellow/white maize, soybean meal, sunflower oilcake, wheaten bran, hominy chop, molasses, DCP/MCP</li>
+            <li>Finished rations for poultry, dairy, feedlot and pig operations</li>
+            <li>Tipper, side-tipper and pneumatic blower transport matched to product form</li>
+            <li>Moisture management and biosecurity maintained through to on-farm silo discharge</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 06 — Logistics -->
+      <section class="profile-section">
+        <h2><span class="section-num">06</span> Logistics Capabilities</h2>
+        <p>Our specialised 62-ton abnormal road freight fleet is purpose-built to move bulk coal, chrome and oversized commodity loads across South Africa and the SADC region — with full permit compliance and escort coordination. Every load is dispatched under a single operational team that manages abnormal-load permits, cross-border documentation and driver scheduling as one workflow.</p>
         <ul>
           <li>62-ton abnormal heavy-haul road freight, with permit and escort coordination</li>
-          <li>Cross-border SADC movements with full documentation</li>
+          <li>Cross-border SADC movements with full documentation (SAD500, transit bonds, SADC certificates of origin)</li>
           <li>Fleet management, dispatch and turnaround scheduling</li>
           <li>Weighbridge tickets, seals and chain-of-custody on every load</li>
+          <li>GPS telematics and route-management discipline</li>
+          <li>Corridors served: principal domestic mining/feedlot routes, Richards Bay, Durban, Maputo, and key SADC border posts</li>
         </ul>
       </section>
 
-      <section>
-        <h2>Compliance &amp; Registration</h2>
+      <!-- 07 — Relationships -->
+      <section class="profile-section">
+        <h2><span class="section-num">07</span> Relationships &amp; Partners</h2>
+        <p>Black62's trading and logistics model is built on long-standing relationships across the producer, transport, inspection and buyer ecosystem. Our counterparties are selected for reputation, operational reliability and compliance — not price alone.</p>
+
+        <div class="rel-grid">
+          <div class="rel-card">
+            <h3>Producers</h3>
+            <p>Direct off-take relationships with reputable South African coal collieries, Bushveld-Complex chrome mines, and Act 36 registered feed manufacturers.</p>
+          </div>
+          <div class="rel-card">
+            <h3>Transporters</h3>
+            <p>Our own 62-ton abnormal fleet backed by a vetted pool of sub-contracted hauliers for peak demand — all operating under the same documentation and compliance standard.</p>
+          </div>
+          <div class="rel-card">
+            <h3>Inspection &amp; Quality</h3>
+            <p>Independent sampling and certification partners at international-inspector level, and SANAS-referenced weighbridges for every outbound load.</p>
+          </div>
+          <div class="rel-card">
+            <h3>End Users</h3>
+            <p>Domestic power generators, ferroalloy smelters, steel and cement producers, commercial feedlots and poultry integrators across SA and SADC.</p>
+          </div>
+          <div class="rel-card">
+            <h3>Ports &amp; Clearing</h3>
+            <p>Established clearing and forwarding relationships at Richards Bay, Durban and Maputo terminals, and at key SADC border posts.</p>
+          </div>
+          <div class="rel-card">
+            <h3>Regulatory</h3>
+            <p>Active compliance workflows with SARS, DMRE, DALRRD, C-BRTA and provincial abnormal-load permit authorities.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 08 — Why Choose Us -->
+      <section class="profile-section">
+        <h2><span class="section-num">08</span> Why Choose Black62</h2>
+        <div class="why-grid">
+          <div class="why-item">
+            <h3>Experienced management</h3>
+            <p>Over two decades of combined sector expertise across mining, energy, agriculture and freight.</p>
+          </div>
+          <div class="why-item">
+            <h3>Reliable supply chain</h3>
+            <p>Long-standing producer and transporter relationships, backed by owned-fleet capacity.</p>
+          </div>
+          <div class="why-item">
+            <h3>Competitive pricing</h3>
+            <p>Transparent, efficient and commercially fair — with clear documentation on every load.</p>
+          </div>
+          <div class="why-item">
+            <h3>Full compliance</h3>
+            <p>SARS, B-BBEE, DMRE, DALRRD and POPIA-aligned across the business.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 09 — Compliance -->
+      <section class="profile-section">
+        <h2><span class="section-num">09</span> Compliance &amp; Registration</h2>
         <ul>
-          <li>Registered Entity: Tsogang Brands (Pty) Ltd t/a Black62 Commodities</li>
-          <li>Registration Number: 2015/115352/07</li>
-          <li>VAT Number: 4870279298</li>
-          <li>B-BBEE Compliant</li>
-          <li>SARS &amp; regulatory aligned</li>
+          <li><strong>Registered entity:</strong> Black62 (Pty) Ltd</li>
+          <li><strong>Registration number:</strong> 2015/115352/07</li>
+          <li><strong>VAT number:</strong> 4870279298</li>
+          <li><strong>B-BBEE:</strong> Compliant, certificate available on request</li>
+          <li><strong>Tax &amp; regulatory:</strong> SARS-registered; DMRE-aligned for mineral trade; DALRRD-aligned for Act 36 feed product</li>
+          <li><strong>Data protection:</strong> POPIA-compliant with a designated Information Officer</li>
+          <li><strong>Transport:</strong> Full TRH11 abnormal-load permit workflow; C-BRTA operator permits for cross-border freight</li>
         </ul>
       </section>
 
-      <section>
-        <h2>Head Office</h2>
-        <p>22 Bedien Street, Culembeeck AH, Roodepoort, 1724, South Africa</p>
-        <p>Email: <a href="mailto:info@black62.co.za">info@black62.co.za</a></p>
+      <!-- 10 — Contact -->
+      <section class="profile-section">
+        <h2><span class="section-num">10</span> Head Office &amp; Contact</h2>
+        <div class="contact-block">
+          <p><strong>Black62 (Pty) Ltd</strong><br />
+          22 Bedien Street, Culembeeck AH<br />
+          Roodepoort, 1724<br />
+          Gauteng, South Africa</p>
+          <p>Email: <a href="mailto:info@black62.co.za">info@black62.co.za</a><br />
+          Phone: <a href="tel:+27105008919">010 500 8919</a><br />
+          Web: <a href="https://www.black62.co.za">www.black62.co.za</a></p>
+        </div>
+
+        <p class="profile-footer-note">This profile is maintained on the Black62 website at <strong>www.black62.co.za/company-profile</strong> and is updated as the business evolves. For the most current version, download directly from our website.</p>
       </section>
     </div>
   </article>
 </Layout>
+
+<style>
+  .profile-cover {
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 3rem;
+  }
+  .profile-lead {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+    font-weight: 600;
+    color: var(--teal);
+    margin: .5rem 0 1rem;
+  }
+  .profile-hint {
+    margin-top: .75rem;
+    font-size: .8rem;
+    color: rgba(200, 204, 208, .55);
+  }
+
+  .profile-section {
+    margin-bottom: 3.25rem;
+    scroll-margin-top: 100px;
+  }
+  .profile-section h2 {
+    display: flex;
+    align-items: baseline;
+    gap: .9rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.25rem, 2.4vw, 1.75rem);
+    color: var(--silver);
+    margin-bottom: 1.25rem;
+    border-left: 2px solid var(--teal);
+    padding-left: 1rem;
+  }
+  .section-num {
+    color: var(--teal);
+    font-size: .9em;
+    font-weight: 700;
+    letter-spacing: .02em;
+  }
+  .profile-section h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--silver);
+    margin-bottom: .5rem;
+  }
+  .profile-section p,
+  .profile-section li {
+    color: rgba(200, 204, 208, .8);
+  }
+  .profile-section p + p { margin-top: .75rem; }
+  .profile-section ul {
+    padding-left: 1.25rem;
+    list-style: disc;
+    margin: .5rem 0 .25rem;
+  }
+  .profile-section ul li { margin-bottom: .35rem; }
+
+  .vmv,
+  .team-grid,
+  .rel-grid,
+  .why-grid {
+    display: grid;
+    gap: 1rem;
+    margin-top: .75rem;
+  }
+  @media (min-width: 640px) {
+    .vmv,
+    .team-grid,
+    .why-grid { grid-template-columns: repeat(2, 1fr); }
+    .rel-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 1024px) {
+    .vmv { grid-template-columns: repeat(3, 1fr); }
+    .team-grid { grid-template-columns: repeat(2, 1fr); }
+    .rel-grid { grid-template-columns: repeat(3, 1fr); }
+    .why-grid { grid-template-columns: repeat(4, 1fr); }
+  }
+
+  .vmv-item,
+  .team-card,
+  .rel-card,
+  .why-item,
+  .commodity-block,
+  .contact-block {
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.25rem 1.35rem;
+  }
+  .commodity-block { margin-bottom: 1rem; }
+  .contact-block p + p { margin-top: .5rem; }
+
+  .profile-footer-note {
+    margin-top: 1.5rem;
+    font-size: .85rem;
+    color: rgba(200, 204, 208, .55);
+  }
+
+  /* =========================
+     Print / PDF stylesheet
+     ========================= */
+  @media print {
+    @page {
+      size: A4;
+      margin: 18mm 16mm;
+    }
+
+    html, body {
+      background: #ffffff !important;
+      color: #1a1a1a !important;
+    }
+
+    /* Hide everything that isn't the profile content */
+    .site-header,
+    .site-footer,
+    .scroll-indicator,
+    .hero-fade,
+    .hero-grid,
+    .hero-glow,
+    .no-print {
+      display: none !important;
+    }
+
+    main { padding: 0 !important; }
+    .subpage { padding: 0 !important; }
+    .container { padding: 0 !important; max-width: 100% !important; }
+
+    /* Typography: dark on light for print legibility */
+    .profile-section h2,
+    .profile-section h3,
+    .silver,
+    h1, h2, h3, h4, p, li, strong {
+      color: #0a0a0a !important;
+      -webkit-text-fill-color: #0a0a0a !important;
+      background: none !important;
+    }
+
+    .profile-section p,
+    .profile-section li {
+      color: #2b2b2b !important;
+    }
+
+    .section-num,
+    .teal,
+    a,
+    .eyebrow {
+      color: #0E8A8D !important;
+    }
+    .profile-lead { color: #0E8A8D !important; }
+
+    /* Cards become simple outlined blocks on white */
+    .vmv-item,
+    .team-card,
+    .rel-card,
+    .why-item,
+    .commodity-block,
+    .contact-block {
+      background: #ffffff !important;
+      border: 1px solid #cccccc !important;
+      padding: .7rem .9rem !important;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    /* Grids stay two-up on A4 for a clean layout */
+    .vmv,
+    .team-grid,
+    .rel-grid,
+    .why-grid {
+      grid-template-columns: repeat(2, 1fr) !important;
+      gap: .6rem !important;
+    }
+
+    .profile-section {
+      margin-bottom: 1.4rem !important;
+      break-inside: avoid-page;
+    }
+    .profile-section h2 {
+      border-left: 2px solid #0E8A8D !important;
+      margin-top: .3rem;
+      margin-bottom: .6rem;
+      font-size: 1.2rem !important;
+    }
+    .profile-section h3 { font-size: 1rem !important; }
+
+    .profile-cover {
+      padding-bottom: 1rem !important;
+      margin-bottom: 1.5rem !important;
+      border-bottom: 1px solid #cccccc !important;
+      break-after: avoid;
+    }
+    .profile-cover h1 {
+      font-size: 1.9rem !important;
+    }
+
+    /* Anchors: show URL after inline links so a printed PDF stays useful */
+    a[href^="http"]::after,
+    a[href^="mailto:"]::after,
+    a[href^="tel:"]::after {
+      content: " (" attr(href) ")";
+      font-size: .85em;
+      color: #555 !important;
+    }
+    a { text-decoration: underline; }
+
+    /* Keep images from blowing layout */
+    img { max-width: 100% !important; height: auto !important; }
+
+    /* Force a page break before commodities if content runs long */
+    #commodities-print-break { page-break-before: always; }
+  }
+</style>
